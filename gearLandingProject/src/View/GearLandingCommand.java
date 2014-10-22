@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 
 public class GearLandingCommand  extends JFrame{
 	
-private GearLandingCommand pan = new GearLandingCommand();
+private ControlPanel pan = new ControlPanel();
 	
 	public GearLandingCommand(){
 		this.setVisible(true);
