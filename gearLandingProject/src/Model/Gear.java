@@ -6,9 +6,26 @@ public class Gear {
 	private GearStatus status;
 	
 	public Gear(){
-		this.status = GearStatus.down;
+		setStatus(GearStatus.down);
 	}
 	
+	public void goUp(){
+		this.maneuver(GearStatus.up);
+		setStatus(GearStatus.up);
+	}
+	
+	public void goDown(){
+		this.maneuver(GearStatus.down);
+		setStatus(GearStatus.down);
+	}
+	
+	public void maneuver(GearStatus direction){
+		if(direction == GearStatus.up)
+			setStatus(GearStatus.goingUp);
+		else if (direction == GearStatus.down)
+			setStatus(GearStatus.goingDown);
+		// Add a sleep(1000);			
+	}		
 	public GearStatus getStatus(){return this.status;}	
 	public void setStatus(GearStatus gearStatus){this.status = gearStatus;}	
 
