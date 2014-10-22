@@ -5,9 +5,7 @@ package View;
 import javax.swing.JFrame;
 
 public class GearLandingCommand  extends JFrame{
-
-private static final long serialVersionUID = 1L;
-
+	
 private ControlPanel pan = new ControlPanel();
 	
 	public GearLandingCommand(){
