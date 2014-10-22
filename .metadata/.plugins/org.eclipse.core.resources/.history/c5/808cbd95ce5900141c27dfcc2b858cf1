@@ -1,0 +1,11 @@
+package tp1;
+
+import tp1.View.Commande_train_atterrissage;
+
+
+public class Main {
+	public static void main (String [] args){
+		Commande_train_atterrissage cta = new Commande_train_atterrissage();
+	}
+	
+}
